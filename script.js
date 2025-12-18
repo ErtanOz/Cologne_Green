@@ -46,12 +46,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     map.on('load', () => {
         // Hide loader
         const loader = document.getElementById('loader');
-        clearInterval(interval);
-        progress.style.width = '100%';
+        if (loader) {
+            clearInterval(interval);
+            progress.style.width = '100%';
 
-        setTimeout(() => {
-            loader.classList.add('fade-out');
-        }, 800);
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 800);
+        }
 
         // Add 3D buildings layer
         const layers = map.getStyle().layers;
@@ -74,28 +76,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         locations = locationsData;
         renderLocations(locations);
         addMarkers(locations);
-
-        // Add 3D buildings layer
-        try {
-            map.addLayer(
-                {
-                    'id': '3d-buildings',
-                    'source': 'maplibre-buildings',
-                    'source-layer': 'building',
-                    'type': 'fill-extrusion',
-                    'minzoom': 15,
-                    'paint': {
-                        'fill-extrusion-color': '#aaa',
-                        'fill-extrusion-height': ['get', 'render_height'],
-                        'fill-extrusion-base': ['get', 'render_min_height'],
-                        'fill-extrusion-opacity': 0.6
-                    }
-                },
-                labelLayerId
-            );
-        } catch (e) {
-            console.warn("Could not add 3D buildings layer:", e);
-        }
     });
 
     function renderLocations(data) {
@@ -127,10 +107,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const el = document.createElement('div');
                 el.className = `custom-marker ${loc.category.toLowerCase()}`;
                 el.innerHTML = `
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                        <circle cx="12" cy="12" r="10" fill="white" />
-                        <circle cx="12" cy="12" r="7" class="marker-inner" />
-                    </svg>
+                    <div class="pulse-wrapper">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="10" fill="white" />
+                            <circle cx="12" cy="12" r="7" class="marker-inner" />
+                        </svg>
+                    </div>
                 `;
 
                 const popupHTML = `
