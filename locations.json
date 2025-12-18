@@ -1,0 +1,92 @@
+[
+  {
+    "id": "finkens-garten",
+    "name": "Naturerlebnisgarten Finkens Garten",
+    "address": "Friedrich-Ebert-Straße 49, 50996 Köln (Rodenkirchen)",
+    "coordinates": [6.992222, 50.886944],
+    "category": "Education",
+    "description": "Nature exploration for children, guided tours for kindergartens and primary school groups, family discovery days.",
+    "links": ["https://www.finkensgarten.org"]
+  },
+  {
+    "id": "flora",
+    "name": "Flora & Botanischer Garten",
+    "address": "Alter Stammheimer Weg, 50735 Köln (Riehl)",
+    "coordinates": [6.971944, 50.959444],
+    "category": "Gardens",
+    "description": "Weekly Sunday tours, botanical walks, tropical greenhouse tours, and specialized plant exhibitions.",
+    "links": ["https://www.koeln.de/tourismus/freizeit/flora-und-botanischer-garten-koeln/"]
+  },
+  {
+    "id": "forstbotanischer-garten",
+    "name": "Forstbotanischer Garten",
+    "address": "Schillingsrotter Straße 100, 50996 Köln (Rodenkirchen)",
+    "coordinates": [6.973333, 50.885],
+    "category": "Gardens",
+    "description": "Public guided tours (typically 1st Saturday and 3rd Wednesday of the month) focusing on exotic trees and seasonal blooms.",
+    "links": ["https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/forstbotanischer-garten-friedenswald"]
+  },
+  {
+    "id": "gut-leidenhausen",
+    "name": "Gut Leidenhausen (UBZ)",
+    "address": "Gut Leidenhausen 1, 51147 Köln (Porz-Eil)",
+    "coordinates": [7.103056, 50.892778],
+    "category": "Education",
+    "description": "Environmental education center featuring a raptor station, forest museum, and the Wahner Heide information portal.",
+    "links": ["https://www.gut-leidenhausen.de/"]
+  },
+  {
+    "id": "freiluga",
+    "name": "FREILUGA (Freiluft- und Gartenarbeitsschule)",
+    "address": "Belvederestraße 149, 50933 Köln (Müngersdorf)",
+    "coordinates": [6.876944, 50.939722],
+    "category": "Education",
+    "description": "Open house days, biology lessons in 'open-air classrooms,' and garden/nature workshops.",
+    "links": ["https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/freiluga"]
+  },
+  {
+    "id": "lindenthaler-tierpark",
+    "name": "Lindenthaler Tierpark",
+    "address": "Kitschburger Straße, 50935 Köln (Lindenthal)",
+    "coordinates": [6.904444, 50.932222],
+    "category": "Wildlife",
+    "description": "Large annual events like the 'Waldmesse' (September), seasonal runs, and interactive nature scavenger hunts.",
+    "links": ["https://lindenthaler-tierpark.de/"]
+  },
+  {
+    "id": "rheinpark",
+    "name": "Rheinpark",
+    "address": "Deutzer Rheinufer, 50679 Köln (Deutz/Mülheim)",
+    "coordinates": [6.972778, 50.950833],
+    "category": "Parks",
+    "description": "Tours of park architecture and landscape, sculpture discovery walks, and garden history tours.",
+    "links": ["https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark"]
+  },
+  {
+    "id": "wildpark-duennwald",
+    "name": "Wildpark Dünnwald",
+    "address": "Dünnwalder Mauspfad 230, 51069 Köln (Dünnwald)",
+    "coordinates": [7.0425, 51.002222],
+    "category": "Wildlife",
+    "description": "Regular public wildlife tours (2nd Wednesday of the month) focusing on deer, mouflon, and European bison.",
+    "links": ["https://www.wildpark-duennwald.de/"]
+  },
+  {
+    "id": "stadtgaertnerei",
+    "name": "Stadtgärtnerei Köln",
+    "address": "Am Grauen Stein 26, 51105 Köln (Poll)",
+    "coordinates": [6.996111, 50.916111],
+    "category": "History",
+    "description": "'Behind the scenes' tours showing the city's large-scale plant production for public parks.",
+    "links": ["https://www.stadt-koeln.de/service/adressen/00643/index.html"]
+  },
+  {
+    "id": "westfriedhof",
+    "name": "Westfriedhof & Krematorium",
+    "address": "Villenweg 2, 50829 Köln (Vogelsang)",
+    "coordinates": [6.877778, 50.957222],
+    "category": "History",
+    "description": "Specialized technical tours of the crematorium and discovery tours of the historic cemetery grounds.",
+    "links": ["https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/friedhoefe/westfriedhof"]
+  }
+]

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köln Grün 2026 | Interaktive Karte</title>
+    <meta name="description" content="Entdecken Sie die Grünflächen und Naturveranstaltungen in Köln für 2026.">
+
+    <!-- MapLibre GL JS -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <svg class="leaf-loader" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2d6a2d"
+                stroke-width="2">
+                <path d="M17,8C8,10,5.9,16.1,5.1,18.1C15.8,15.6,18,8,18,8s-3.5,6.5-6,9c0,0,11-6,6-11" />
+            </svg>
+            <h2>Köln Grün 2026</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="header">
+                <div class="hero-image" style="background-image: url('hero.png')"></div>
+                <div class="header-content">
+                    <div class="header-top">
+                        <h1>Köln Grün 2026</h1>
+                        <button id="theme-toggle" class="icon-btn">
+                            <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Veranstaltungsprogramm Amt für Landschaftspflege & Grünflächen</p>
+                </div>
+            </header>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Nach Orten oder Events suchen...">
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active">Alle</button>
+                <button class="filter-btn">Gärten</button>
+                <button class="filter-btn">Bildung</button>
+                <button class="filter-btn">Wildtiere</button>
+                <button class="filter-btn">Geschichte</button>
+            </div>
+
+            <div id="location-list">
+                <!-- Location cards will be injected here -->
+                <div class="loading-state">Lade Grünflächen...</div>
+            </div>
+
+            <div class="sidebar-ornament">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M100 20C60 20 20 60 20 100C20 140 60 180 100 180C140 180 180 140 180 100C180 60 140 20 100 20Z"
+                        stroke="var(--primary)" stroke-width="0.5" stroke-dasharray="4 4" />
+                    <path d="M100 40C80 40 60 60 60 100C60 140 80 160 100 160" stroke="var(--primary)"
+                        stroke-width="0.5" opacity="0.3" />
+                </svg>
+            </div>
+        </aside>
+
+        <!-- Map Container -->
+        <main id="map"></main>
+
+        <!-- Details View -->
+        <div id="details-view" class="details-view">
+            <!-- Selected location details will appear here -->
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
